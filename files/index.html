@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星詠みの旅 | ファンタジーRPG公式サイト</title>
+
+<!-- ▼フォント読み込み(見出し用Cinzel / 本文用Noto Sans JP) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================
+     ナビゲーション
+     ============================================ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">
+      <span class="nav__logo-icon">✦</span>
+      星詠みの旅
+    </a>
+    <nav class="nav__links">
+      <a href="#features">特徴</a>
+      <a href="#characters">キャラクター</a>
+      <a href="#world">世界観</a>
+      <a href="#news">最新情報</a>
+    </nav>
+    <a href="#download" class="nav__cta">今すぐ始める</a>
+    <button class="nav__burger" id="navBurger" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============================================
+     ヒーローセクション
+     ============================================ -->
+<section class="hero" id="top">
+  <div class="hero__bg"></div>
+  <div class="hero__stars" id="heroStars"></div>
+
+  <div class="hero__content">
+    <p class="hero__eyebrow">— 新たな星が、旅路を照らす —</p>
+    <h1 class="hero__title">星詠みの旅</h1>
+    <p class="hero__desc">
+      七つの国を巡り、仲間と星座を紡ぐ<br>
+      オープンワールドRPG、ここに開幕。
+    </p>
+    <div class="hero__actions">
+      <a href="#download" class="btn btn--gold">無料でプレイ</a>
+      <a href="#characters" class="btn btn--ghost">キャラクターを見る</a>
+    </div>
+  </div>
+
+  <div class="hero__scroll">
+    <span>SCROLL</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============================================
+     特徴セクション(星座で結ぶ演出)
+     ============================================ -->
+<section class="features" id="features">
+  <p class="section__eyebrow">FEATURES</p>
+  <h2 class="section__title">旅を彩る、三つの星</h2>
+
+  <div class="constellation" id="constellation">
+    <svg class="constellation__lines" id="constellationSvg" viewBox="0 0 1000 300" preserveAspectRatio="none">
+      <line x1="166" y1="150" x2="500" y2="150" />
+      <line x1="500" y1="150" x2="833" y2="150" />
+    </svg>
+
+    <article class="feature-star">
+      <div class="feature-star__node">01</div>
+      <h3>広大なオープンワールド</h3>
+      <p>山や海、砂漠や雪原まで、境界のない世界を自由に探索できます。</p>
+    </article>
+
+    <article class="feature-star">
+      <div class="feature-star__node">02</div>
+      <h3>元素を操る戦闘</h3>
+      <p>異なる力を持つ仲間を切り替え、元素反応を駆使した爽快な戦闘へ。</p>
+    </article>
+
+    <article class="feature-star">
+      <div class="feature-star__node">03</div>
+      <h3>紡がれる物語</h3>
+      <p>個性豊かな仲間たちと出会い、それぞれの運命が交わる物語を辿ります。</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================
+     キャラクター紹介(横スクロールカルーセル)
+     ============================================ -->
+<section class="characters" id="characters">
+  <p class="section__eyebrow">CHARACTERS</p>
+  <h2 class="section__title">仲間となる旅人たち</h2>
+
+  <div class="char-carousel" id="charCarousel">
+
+    <article class="char-card" style="--card-color:#c9a76a;">
+      <div class="char-card__portrait">✦</div>
+      <div class="char-card__info">
+        <span class="char-card__element">炎</span>
+        <h3>アルディア</h3>
+        <p>南の国から来た剣士。誰よりも仲間を想う、まっすぐな心の持ち主。</p>
+      </div>
+    </article>
+
+    <article class="char-card" style="--card-color:#5fc9c0;">
+      <div class="char-card__portrait">✦</div>
+      <div class="char-card__info">
+        <span class="char-card__element">水</span>
+        <h3>ルミナ</h3>
+        <p>静かな図書館の番人。膨大な知識と、水のように澄んだ杖術を操る。</p>
+      </div>
+    </article>
+
+    <article class="char-card" style="--card-color:#9b8ac9;">
+      <div class="char-card__portrait">✦</div>
+      <div class="char-card__info">
+        <span class="char-card__element">雷</span>
+        <h3>ゼフィール</h3>
+        <p>風のように現れる旅商人。弓の腕は一流、けれど本業は謎に包まれている。</p>
+      </div>
+    </article>
+
+    <article class="char-card" style="--card-color:#7bc98a;">
+      <div class="char-card__portrait">✦</div>
+      <div class="char-card__info">
+        <span class="char-card__element">草</span>
+        <h3>シルヴィ</h3>
+        <p>森を守る若き治癒師。植物と対話し、傷ついた仲間をそっと癒す。</p>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="char-carousel__hint">← ドラッグして他の仲間を見る →</div>
+</section>
+
+<!-- ============================================
+     世界観セクション
+     ============================================ -->
+<section class="world" id="world">
+  <div class="world__panel">
+    <p class="section__eyebrow">WORLD</p>
+    <h2 class="section__title">七つの国、ひとつの空</h2>
+    <p class="world__desc">
+      それぞれの国には固有の神が宿り、独自の文化と元素の力が根付いています。
+      旅人はその境界を越え、すべての国を自由に旅することができます。
+    </p>
+    <ul class="world__list">
+      <li><span>01</span>陽炎の国 — 灼熱の砂漠と炎の神殿</li>
+      <li><span>02</span>静水の国 — 水路の街と知恵の図書館</li>
+      <li><span>03</span>雷鳴の国 — 稲妻走る孤島の要塞</li>
+      <li><span>04</span>緑陰の国 — 生命宿る深緑の森</li>
+    </ul>
+  </div>
+  <div class="world__visual"></div>
+</section>
+
+<!-- ============================================
+     最新情報セクション
+     ============================================ -->
+<section class="news" id="news">
+  <p class="section__eyebrow">NEWS</p>
+  <h2 class="section__title">最新情報</h2>
+
+  <div class="news__grid">
+    <article class="news-card">
+      <span class="news-card__date">2026.07.10</span>
+      <span class="news-card__tag">アップデート</span>
+      <h3>Ver.1.1「星降る夜に」実装決定</h3>
+      <p>新エリア「静水の国」と新キャラクター2名が登場予定です。</p>
+    </article>
+    <article class="news-card">
+      <span class="news-card__date">2026.07.03</span>
+      <span class="news-card__tag">イベント</span>
+      <h3>期間限定イベント「星詠みの祭壇」開催</h3>
+      <p>特別な星座の欠片を集めて、限定報酬と交換しよう。</p>
+    </article>
+    <article class="news-card">
+      <span class="news-card__date">2026.06.28</span>
+      <span class="news-card__tag">お知らせ</span>
+      <h3>公式生放送のお知らせ</h3>
+      <p>次回アップデート情報を先行公開する特別番組を配信します。</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================
+     ダウンロードCTAセクション
+     ============================================ -->
+<section class="download" id="download">
+  <p class="section__eyebrow">START YOUR JOURNEY</p>
+  <h2 class="section__title">星々が導く旅へ、いま一歩を</h2>
+  <p class="download__desc">PC / スマートフォン対応。今すぐ無料でダウンロード。</p>
+  <div class="download__actions">
+    <a href="#" class="btn btn--gold btn--lg">PC版をダウンロード</a>
+    <a href="#" class="btn btn--ghost btn--lg">スマホ版をダウンロード</a>
+  </div>
+</section>
+
+<!-- ============================================
+     フッター
+     ============================================ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__logo">✦ 星詠みの旅</div>
+    <nav class="footer__links">
+      <a href="#">利用規約</a>
+      <a href="#">プライバシーポリシー</a>
+      <a href="#">お問い合わせ</a>
+    </nav>
+    <div class="footer__social">
+      <a href="#" aria-label="X">X</a>
+      <a href="#" aria-label="YouTube">YT</a>
+      <a href="#" aria-label="Discord">DC</a>
+    </div>
+  </div>
+  <p class="footer__copyright">© 2026 星詠みの旅 運営事務局. サンプルサイトです。</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
